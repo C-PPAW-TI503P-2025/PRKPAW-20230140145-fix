@@ -34,6 +34,7 @@ function Navbar() {
                     {role === 'admin' && (
                         <Link to="/report" className="hover:text-gray-200 font-bold border-b-2 border-transparent hover:border-white">Laporan (Admin)</Link>
                     )}
+                    <Link to="/monitoring" className="hover:text-gray-200">Monitoring Suhu</Link>
                     <button onClick={handleLogout} className="bg-red-500 px-3 py-1 rounded hover:bg-red-600">Logout</button>
                 </div>
             </div>

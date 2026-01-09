@@ -9,6 +9,7 @@ const port = 3001;
 const authRoutes = require('./routes/auth');
 const presensiRoutes = require('./routes/presensi');
 const reportRoutes = require('./routes/reports');
+const iotRoutes = require('./routes/iot');
 
 app.use(cors());
 app.use(express.json());
@@ -25,6 +26,7 @@ app.use((req, res, next) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/presensi', presensiRoutes);
 app.use('/api/reports', reportRoutes);
+app.use('/api/iot', iotRoutes);
 
 app.get('/', (req, res) => {
   res.send('Server Presensi Berjalan!');
